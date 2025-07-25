@@ -16,5 +16,5 @@ menu "Example configuration"
             bool "Continuous  measurements"
     endchoice
 
-    rsource "../../../../devtools/Kconfig.i2c"
+    rsource "../../../Kconfig.i2c"
 endmenu
