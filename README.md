@@ -1,5 +1,9 @@
 # esp-idf-lib/max31725
 
+[![Build examples](https://github.com/esp-idf-lib/max31725/actions/workflows//build.yml/badge.svg)](https://github.com/esp-idf-lib/max31725/actions/workflows//build.yml)
+[![Build docs](https://github.com/esp-idf-lib/max31725/actions/workflows//build-docs.yml/badge.svg)](https://github.com/esp-idf-lib/max31725/actions/workflows//build-docs.yml)
+[![Validation](https://github.com/esp-idf-lib/max31725/actions/workflows//validate-component.yml/badge.svg)](https://github.com/esp-idf-lib/max31725/actions/workflows//validate-component.yml)
+
 Driver for MAX31725/MAX31726 temperature sensors.
 
 * [Documentation](https://esp-idf-lib.github.io/max31725/)
@@ -11,7 +15,7 @@ Driver for MAX31725/MAX31726 temperature sensors.
 ## Installation
 
 ```sh
-idf.py add-dependency esp-idf-lib/max31725^1.0.0
+idf.py add-dependency esp-idf-lib/max31725
 ```
 
 ## Support
