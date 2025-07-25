@@ -11,7 +11,7 @@ Driver for MAX31725/MAX31726 temperature sensors.
 ## Installation
 
 ```sh
-idf.py add-dependency "esp-idf-lib/max31725^1.0.0
+idf.py add-dependency esp-idf-lib/max31725^1.0.0
 ```
 
 ## Support
