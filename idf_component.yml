@@ -1,5 +1,5 @@
 ---
-version: 1.0.3
+version: 1.0.4
 description: Driver for MAX31725/MAX31726 temperature sensors
 license: BSD-3
 targets:
