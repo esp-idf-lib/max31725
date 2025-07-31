@@ -22,7 +22,7 @@ void test(void *pvParameters)
     // Continuous measurement mode
 
     ESP_ERROR_CHECK(max31725_set_config(&dev, MAX31725_MODE_CONTINUOUS, FORMAT,
-            MAX31725_FAULTS_1, MAX31725_OS_LOW, MAX31725_OS_COMPARATOR));
+                                        MAX31725_FAULTS_1, MAX31725_OS_LOW, MAX31725_OS_COMPARATOR));
     while (1)
     {
         float temp;
@@ -38,7 +38,7 @@ void test(void *pvParameters)
     // One-shot measurement mode
 
     ESP_ERROR_CHECK(max31725_set_config(&dev, MAX31725_MODE_SHUTDOWN, FORMAT,
-            MAX31725_FAULTS_1, MAX31725_OS_LOW, MAX31725_OS_COMPARATOR));
+                                        MAX31725_FAULTS_1, MAX31725_OS_LOW, MAX31725_OS_COMPARATOR));
     while (1)
     {
         float temp;

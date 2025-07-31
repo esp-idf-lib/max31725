@@ -52,7 +52,8 @@ extern "C" {
 /**
  * Temperature data range
  */
-typedef enum {
+typedef enum
+{
     MAX31725_FMT_NORMAL = 0, //!< -128 deg.C .. +127.99609375 deg.C (default)
     MAX31725_FMT_EXTENDED    //!< -64 deg.C .. +191.99609375 deg.C (max 150 deg.C)
 } max31725_data_format_t;
@@ -60,7 +61,8 @@ typedef enum {
 /**
  * Fault queue size
  */
-typedef enum {
+typedef enum
+{
     MAX31725_FAULTS_1 = 0, //!< 1 fault to trigger OS (default)
     MAX31725_FAULTS_2,     //!< 2 fault to trigger OS
     MAX31725_FAULTS_4,     //!< 4 fault to trigger OS
@@ -70,7 +72,8 @@ typedef enum {
 /**
  * OS polarity
  */
-typedef enum {
+typedef enum
+{
     MAX31725_OS_LOW = 0, //!< OS active low (default)
     MAX31725_OS_HIGH     //!< OS active high
 } max31725_os_polarity_t;
@@ -78,7 +81,8 @@ typedef enum {
 /**
  * Mode of OS operation
  */
-typedef enum {
+typedef enum
+{
     MAX31725_OS_COMPARATOR = 0, //!< OS comparator mode (default)
     MAX31725_OS_INTERRUPT       //!< OS interrupt mode
 } max31725_os_mode_t;
@@ -86,7 +90,8 @@ typedef enum {
 /**
  * Device operating mode
  */
-typedef enum {
+typedef enum
+{
     MAX31725_MODE_CONTINUOUS = 0, //!< Continuous measurement mode (default)
     MAX31725_MODE_SHUTDOWN        //!< Shutdown mode
 } max31725_mode_t;
@@ -123,7 +128,7 @@ esp_err_t max31725_free_desc(i2c_dev_t *dev);
  * @return `ESP_OK` on success
  */
 esp_err_t max31725_get_config(i2c_dev_t *dev, max31725_mode_t *mode, max31725_data_format_t *fmt, max31725_fault_queue_t *fq,
-        max31725_os_polarity_t *op, max31725_os_mode_t *om);
+                              max31725_os_polarity_t *op, max31725_os_mode_t *om);
 
 /**
  * @brief Configure device
@@ -137,7 +142,7 @@ esp_err_t max31725_get_config(i2c_dev_t *dev, max31725_mode_t *mode, max31725_da
  * @return `ESP_OK` on success
  */
 esp_err_t max31725_set_config(i2c_dev_t *dev, max31725_mode_t mode, max31725_data_format_t fmt, max31725_fault_queue_t fq,
-        max31725_os_polarity_t op, max31725_os_mode_t om);
+                              max31725_os_polarity_t op, max31725_os_mode_t om);
 
 /**
  * @brief Made a single-shot measurement

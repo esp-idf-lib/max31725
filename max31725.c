@@ -136,7 +136,7 @@ esp_err_t max31725_free_desc(i2c_dev_t *dev)
 }
 
 esp_err_t max31725_get_config(i2c_dev_t *dev, max31725_mode_t *mode, max31725_data_format_t *fmt, max31725_fault_queue_t *fq,
-        max31725_os_polarity_t *op, max31725_os_mode_t *om)
+                              max31725_os_polarity_t *op, max31725_os_mode_t *om)
 {
     CHECK_ARG(dev && mode && fmt && fq && op && om);
 
@@ -156,7 +156,7 @@ esp_err_t max31725_get_config(i2c_dev_t *dev, max31725_mode_t *mode, max31725_da
 }
 
 esp_err_t max31725_set_config(i2c_dev_t *dev, max31725_mode_t mode, max31725_data_format_t fmt, max31725_fault_queue_t fq,
-        max31725_os_polarity_t op, max31725_os_mode_t om)
+                              max31725_os_polarity_t op, max31725_os_mode_t om)
 {
     CHECK_ARG(dev && fq <= MAX31725_FAULTS_6);
 
